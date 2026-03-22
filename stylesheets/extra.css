@@ -1,0 +1,59 @@
+/* docs/stylesheets/extra.css */
+:root {
+  --md-primary-fg-color:        #7C5CBF;  /* purple buttons & links */
+  --md-primary-fg-color--light: #9B7FD4;  /* hover states */
+  --md-primary-fg-color--dark:  #5A3E9B;  /* active states */
+  --md-accent-fg-color:         #6B8AE8;  /* blue-purple highlights "s'adapte" */
+
+  /* Dark background */
+  --md-default-bg-color:        #0E0E1C;  /* main background */
+  --md-default-fg-color:        #FFFFFF;  /* body text */
+  --md-default-fg-color--light: #B0B8D8;  /* secondary text */
+}
+
+.md-header {
+  background: linear-gradient(135deg, #0E0E1C 0%, #2D1B6B 50%, #1A1A3A 100%);
+  box-shadow: 0 2px 20px rgba(124, 92, 191, 0.3);
+}
+
+/* Optional: also apply to the tabs bar if you use tabs */
+.md-tabs {
+  background: linear-gradient(135deg, #2D1B6B 0%, #1A1A3A 100%);
+}
+
+
+/* docs/stylesheets/extra.css */
+
+/* ── Background ── */
+.md-main {
+  background: linear-gradient(160deg, #0E0E1C 0%, #1A1A3A 50%, #2D1B6B 100%);
+  min-height: 100vh;
+}
+
+/* Content area behind the text */
+.md-content {
+  background: transparent;
+}
+
+/* Sidebar (if you use navigation) */
+.md-sidebar {
+  background: rgba(14, 14, 28, 0.8);
+}
+
+/* Full page background (behind everything) */
+body {
+  background-color: #0E0E1C;
+}
+
+/* ── Publications table ── */
+.md-content__inner table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.md-content__inner table td:last-child {
+  white-space: normal;
+  word-break: break-word;
+  max-width: 600px;
+}
