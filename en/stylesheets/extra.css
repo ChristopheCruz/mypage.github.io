@@ -126,3 +126,16 @@
 .md-typeset .talk-list .talk { display: grid; grid-template-columns: 1fr auto; gap: .8rem; margin: 0; padding: .5rem 0; border-bottom: 1px solid var(--site-border); }
 .talk__tag { font-size: .66rem; color: var(--site-muted); white-space: nowrap; }
 @media screen and (max-width: 44.9375em) { .md-typeset .talk-list .talk { grid-template-columns: 1fr; gap: 0; } }
+
+/* Vignettes des publications de référence */
+.md-typeset .pub-list .pub--key { display: grid; grid-template-columns: 5.5rem 1fr; gap: .9rem; align-items: start; }
+.pub-thumb { display: block; }
+.md-typeset .pub-thumb img { display: block; width: 100%; height: auto; border: 1px solid var(--site-border); border-radius: .15rem; background: #fff; }
+.pub-cover { display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 3 / 4; padding: .45rem; font-size: .58rem; line-height: 1.25; font-weight: 700; color: #fff; background: var(--md-primary-fg-color--light); border-radius: .15rem; hyphens: auto; }
+.pub-body { display: block; min-width: 0; }
+@media screen and (max-width: 44.9375em) { .md-typeset .pub-list .pub--key { grid-template-columns: 4.8rem 1fr; gap: .6rem; } .pub-cover { font-size: .5rem; padding: .3rem; } }
+
+/* Vignettes de la liste */
+.md-typeset .pub-list .pub--thumb { display: grid; grid-template-columns: 3.2rem 1fr; gap: .8rem; align-items: start; }
+.pub--thumb .pub-cover { font-size: .4rem; padding: .2rem; }
+.md-typeset .pub-list .pub[hidden], .md-typeset .talk-list .talk[hidden] { display: none; }
