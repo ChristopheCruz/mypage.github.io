@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img"><style>
+text{font-family:Roboto,Arial,sans-serif;font-size:18px;fill:#2d2d3a}
+.b{fill:#efeaf9;stroke:#7c5cbf;stroke-width:1.5}.t{fill:#d7f0ea;stroke:#1a8a7a;stroke-width:1.5}.l{stroke:#a9a3bd;stroke-width:2;fill:none}
+.n{fill:#efeaf9;stroke:#7c5cbf;stroke-width:2;animation:p 3.6s infinite}@keyframes p{0%,30%,100%{fill:#efeaf9}15%{fill:#7c5cbf}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><line class="l" x1="90" y1="60" x2="200" y2="40"/><line class="l" x1="200" y1="40" x2="320" y2="70"/><line class="l" x1="320" y1="70" x2="400" y2="140"/><line class="l" x1="400" y1="140" x2="250" y2="150"/><line class="l" x1="250" y1="150" x2="120" y2="150"/><line class="l" x1="120" y1="150" x2="90" y2="60"/><line class="l" x1="200" y1="40" x2="250" y2="150"/><line class="l" x1="320" y1="70" x2="250" y2="150"/><circle class="n" style="animation-delay:0.0s" cx="90" cy="60" r="17"/><circle class="n" style="animation-delay:0.6s" cx="200" cy="40" r="17"/><circle class="n" style="animation-delay:1.2s" cx="320" cy="70" r="17"/><circle class="n" style="animation-delay:1.7999999999999998s" cx="400" cy="140" r="17"/><circle class="n" style="animation-delay:2.4s" cx="250" cy="150" r="17"/><circle class="n" style="animation-delay:3.0s" cx="120" cy="150" r="17"/></svg>

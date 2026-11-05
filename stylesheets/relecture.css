@@ -1,0 +1,25 @@
+/* Mode relecture : marque les ajouts et les points à vérifier.
+   Avant publication, retirer cette feuille de extra_css dans mkdocs.yml. */
+:root {
+  --relecture-ajout: #e3f4e6;
+  --relecture-ajout-bord: #1b7a35;
+  --relecture-verif: #fdeed3;
+  --relecture-verif-bord: #a85a00;
+}
+[data-md-color-scheme="slate"] {
+  --relecture-ajout: #173524;
+  --relecture-ajout-bord: #6fd08c;
+  --relecture-verif: #3f2c12;
+  --relecture-verif-bord: #f2b35c;
+}
+.ajout { background: var(--relecture-ajout); box-shadow: inset 3px 0 0 var(--relecture-ajout-bord); padding-left: .5rem; padding-right: .2rem; }
+span.ajout { box-shadow: none; padding: 0 .2rem; border-bottom: 2px solid var(--relecture-ajout-bord); }
+.ajout::before { content: "Ajout"; margin-right: .4rem; padding: 0 .3rem; font-size: .62rem; font-weight: 700; color: var(--md-default-bg-color); background: var(--relecture-ajout-bord); border-radius: .15rem; }
+.ajout--verifier { background: var(--relecture-verif); box-shadow: inset 3px 0 0 var(--relecture-verif-bord); }
+.ajout--verifier::before { content: "À vérifier"; background: var(--relecture-verif-bord); }
+body::after { content: "Mode relecture : ajouts surlignés"; position: fixed; right: .6rem; bottom: .6rem; z-index: 10; padding: .2rem .5rem; font-size: .62rem; font-weight: 700; color: var(--md-default-bg-color); background: var(--relecture-ajout-bord); border-radius: .2rem; }
+@media print { body::after { display: none; } }
+
+/* Listes en grille ou en blocs : étiquette en haut à droite. */
+.md-typeset .news li.ajout, .md-typeset .pub-list .pub.ajout { position: relative; padding-left: .6rem; padding-right: 4.6rem; }
+.news li.ajout::before, .pub.ajout::before { position: absolute; top: .45rem; right: .4rem; margin: 0; }

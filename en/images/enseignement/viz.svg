@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img"><style>
+text{font-family:Roboto,Arial,sans-serif;font-size:18px;fill:#2d2d3a}
+.b{fill:#efeaf9;stroke:#7c5cbf;stroke-width:1.5}.t{fill:#d7f0ea;stroke:#1a8a7a;stroke-width:1.5}.l{stroke:#a9a3bd;stroke-width:2;fill:none}
+.v{fill:#7c5cbf;transform-box:fill-box;transform-origin:bottom;animation:g 4s ease-out infinite}@keyframes g{0%{transform:scaleY(0)}35%,100%{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><path class="l" d="M50 20V175H440"/><rect class="v" style="animation-delay:0.0s" x="75" y="115" width="36" height="60" rx="3"/><rect class="v" style="animation-delay:0.15s" x="135" y="70" width="36" height="105" rx="3"/><rect class="v" style="animation-delay:0.3s" x="195" y="95" width="36" height="80" rx="3"/><rect class="v" style="animation-delay:0.44999999999999996s" x="255" y="40" width="36" height="135" rx="3"/><rect class="v" style="animation-delay:0.6s" x="315" y="80" width="36" height="95" rx="3"/><rect class="v" style="animation-delay:0.75s" x="375" y="25" width="36" height="150" rx="3"/></svg>

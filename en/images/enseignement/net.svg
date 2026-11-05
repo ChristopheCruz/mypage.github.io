@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img"><style>
+text{font-family:Roboto,Arial,sans-serif;font-size:18px;fill:#2d2d3a}
+.b{fill:#efeaf9;stroke:#7c5cbf;stroke-width:1.5}.t{fill:#d7f0ea;stroke:#1a8a7a;stroke-width:1.5}.l{stroke:#a9a3bd;stroke-width:2;fill:none}
+.q{fill:#7c5cbf;animation:a 3s linear infinite}.r{fill:#1a8a7a;animation:c 3s linear infinite}@keyframes a{0%{transform:translateX(0);opacity:1}50%{transform:translateX(220px);opacity:1}51%,100%{opacity:0}}@keyframes c{0%,50%{opacity:0;transform:translateX(0)}51%{opacity:1;transform:translateX(0)}100%{transform:translateX(-220px);opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><rect class="b" x="30" y="60" width="100" height="80" rx="6"/><text x="80" y="105" text-anchor="middle">Client</text><rect class="t" x="350" y="60" width="100" height="80" rx="6"/><text x="400" y="105" text-anchor="middle">Server</text><path class="l" d="M130 85H350M350 115H130"/><text x="240" y="72" text-anchor="middle">request</text><text x="240" y="138" text-anchor="middle">response</text><circle class="q" cx="130" cy="85" r="7"/><circle class="r" cx="350" cy="115" r="7"/></svg>
