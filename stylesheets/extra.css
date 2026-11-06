@@ -139,3 +139,13 @@
 .md-typeset .pub-list .pub--thumb { display: grid; grid-template-columns: 3.2rem 1fr; gap: .8rem; align-items: start; }
 .pub--thumb .pub-cover { font-size: .4rem; padding: .2rem; }
 .md-typeset .pub-list .pub[hidden], .md-typeset .talk-list .talk[hidden] { display: none; }
+
+/* Topic MDPI */
+.md-typeset .topic-banner { display: block; width: 100%; border-radius: .3rem; }
+.md-typeset ul.chips { display: flex; flex-wrap: wrap; gap: .3rem; list-style: none; margin: .3rem 0 0; padding: 0; }
+[dir="ltr"] .md-typeset ul.chips li { margin: 0; padding: .05rem .5rem; font-size: .68rem; background: var(--site-surface); border-radius: 1rem; }
+.hbar { display: grid; grid-template-columns: minmax(0, 15rem) 1fr 1.6rem; gap: .6rem; align-items: center; padding: .2rem 0; font-size: .72rem; }
+.hbar__track { height: .7rem; background: var(--site-surface); border-radius: .2rem; }
+.hbar__fill { display: block; height: 100%; background: var(--site-bar); border-radius: .2rem; }
+.hbar__value { text-align: right; color: var(--site-muted); }
+@media screen and (max-width: 44.9375em) { .hbar { grid-template-columns: 1fr 1.6rem; } .hbar__label { grid-column: 1 / -1; } }

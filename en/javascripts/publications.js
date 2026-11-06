@@ -41,19 +41,21 @@
   }
 
   function initChart() {
-    var wrap = document.querySelector(".pub-chart-wrap");
-    if (!wrap) return;
-    var tip = wrap.querySelector(".pub-tip");
-    wrap.querySelectorAll(".pub-chart__col").forEach(function (column) {
-      column.addEventListener("mouseenter", function () {
-        var box = column.querySelector(".pub-chart__bar").getBoundingClientRect();
-        var origin = wrap.getBoundingClientRect();
-        tip.textContent = column.dataset.tip;
-        tip.style.left = box.left - origin.left + box.width / 2 + "px";
-        tip.style.top = box.top - origin.top + "px";
-        tip.hidden = false;
+    document.querySelectorAll(".pub-chart-wrap").forEach(function (wrap) {
+      var tip = wrap.querySelector(".pub-tip");
+      wrap.querySelectorAll(".pub-chart__col").forEach(function (column) {
+        column.addEventListener("mouseenter", function () {
+          var bar = column.querySelector(".pub-chart__bar");
+          if (!bar) return;
+          var box = bar.getBoundingClientRect();
+          var origin = wrap.getBoundingClientRect();
+          tip.textContent = column.dataset.tip;
+          tip.style.left = box.left - origin.left + box.width / 2 + "px";
+          tip.style.top = box.top - origin.top + "px";
+          tip.hidden = false;
+        });
+        column.addEventListener("mouseleave", function () { tip.hidden = true; });
       });
-      column.addEventListener("mouseleave", function () { tip.hidden = true; });
     });
   }
 
