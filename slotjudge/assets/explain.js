@@ -23,7 +23,7 @@ function drawEx(){const e=L.ex[ex],T=+$("exT").value,tau=+$("exTau").value;
   let k=0;p.forEach((a,i)=>{if(a>p[k])k=i});
   $("exO").innerHTML=e.o.map((o,i)=>`<div class="o"><span>${o[0]}</span><span class="br"><i class="${i===none?"n":""}" style="width:${100*p[i]}%"></i></span><b>${nf(p[i],2)}</b></div>`).join("");
   const P=$("exP");let txt,col,why;const a={o:e.o[k][0],p:nf(p[k],2),t:nf(tau,2)};
-  if(p[k]<tau){txt=L.ask;col="ask";why=fill(L.why_ask,a)}else if(k===none){txt=L.ignore;col="ign";why=fill(L.why_ign,a)}else{txt=`${L.act}${L.locale==="fr-FR"?" : ":": "}${e.slot} = ${e.o[k][0]}`;col="good";why=fill(L.why_act,a)}
+  if(p[k]<tau){txt=L.ask;col="ask";why=fill(L.why_ask,a)}else if(k===none){txt=L.ignore;col="ign";why=fill(L.why_ign,a)}else{txt=`${L.act}${L.sep}${e.slot} = ${e.o[k][0]}`;col="good";why=fill(L.why_act,a)}
   P.textContent=txt;P.style.background=v(col);
   $("exW").textContent=why+(p[k]>=tau&&k!==e.gold?fill(L.why_err,{g:e.o[e.gold][0]}):"")}
 tabs("exTabs",L.ex.map((e,i)=>[String(i),e.name]),"0",k=>{ex=+k;drawEx()});
